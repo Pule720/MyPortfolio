@@ -14,7 +14,7 @@ export default function Contact() {
   ];
 
   return (
-    <main className="relative flex items-center justify-center p-4 md:p-8 min-h-screen z-10 font-mono overflow-hidden bg-[#050505]">
+    <main className="relative flex items-center justify-center p-4 md:p-8 min-h-screen z-10 font-mono overflow-hidden ">
       
       {/* SUBTLE PARTICLE OVERLAY */}
       <div className="absolute inset-0 pointer-events-none">
