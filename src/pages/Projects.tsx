@@ -22,7 +22,57 @@ const PROJECTS_DATA = [
       "Validated 0% tradeoff between rapid convergence and path efficiency."
     ]
   },
-  // Add more project objects here...
+  {
+  id: "cross_lingual_embeddings",
+  title: "CROSS_LINGUAL_EMBEDDINGS_AFRICAN_LANGS",
+  domain: "NLP / Multilingual AI",
+  role: "Researcher & Developer",
+  stack: "Python | FastText | CCA | VecMap | NLP",
+  outcome: "Improved Semantic Alignment for Low-Resource Languages",
+  problem: "Low-resource African languages suffer from poor semantic representation, limiting cross-lingual transfer and downstream NLP performance.",
+  execLogic: "Aligned isiZulu, Setswana, and Sepedi word embeddings with English using bilingual lexicons and statistical alignment methods.",
+  techLogic: "Trained FastText embeddings and applied CCA and VecMap alignment techniques, evaluated via cosine similarity and NER to compare semantic preservation.",
+  impacts: [
+    "Demonstrated superior semantic alignment using CCA.",
+    "Improved NER performance for low-resource languages.",
+    "Advanced multilingual NLP tooling for African languages."
+  ]
+},
+
+{
+  id: "medical_short_text_semantic_expansion",
+  title: "MEDICAL_SHORT_TEXT_SEMANTIC_EXPANSION",
+  domain: "NLP / Healthcare AI",
+  role: "Researcher & Re-Implementation Lead",
+  stack: "Python | Word2Vec | CNN | LSTM | Clustering",
+  outcome: "Enhanced Semantic Representation for Short Medical Texts",
+  problem: "Medical short texts are sparse, ambiguous, and context-poor, leading to degraded classification performance in standard NLP models.",
+  execLogic: "Re-implemented a semantic expansion approach that enriches word embeddings with cluster-level semantic information.",
+  techLogic: "Applied Word2Vec with hierarchical clustering to create word-cluster embeddings, used as inputs to CNN and LSTM classifiers on medical-NLP and TREC datasets.",
+  impacts: [
+    "Improved semantic richness of short medical texts.",
+    "Achieved competitive classification performance on benchmarks.",
+    "Validated semantic expansion as an effective intermediate NLP technique."
+  ]
+},
+
+{
+  id: "document_ocr_pipeline",
+  title: "DOCUMENT_OCR_AND_PROCESSING_PIPELINE",
+  domain: "Computer Vision / Document AI",
+  role: "Machine Learning Engineer",
+  stack: "Python | OpenCV | Tesseract OCR | NumPy",
+  outcome: "Automated Text Extraction from Structured Documents",
+  problem: "Unstructured document images require accurate segmentation and OCR to enable reliable downstream data extraction.",
+  execLogic: "Built an end-to-end OCR pipeline to preprocess, segment, and extract text from document images.",
+  techLogic: "Used OpenCV for image preprocessing and document segmentation, followed by Tesseract OCR for text extraction and structured output generation.",
+  impacts: [
+    "Enabled automated extraction from scanned documents.",
+    "Improved OCR accuracy through image preprocessing.",
+    "Applicable to KYC, identity verification, and document digitization."
+  ]
+},
+
 ];
 
 export default function Projects() {
