@@ -5,7 +5,7 @@ import { loadSlim } from "@tsparticles/slim";
 import Landing from "./pages/Landing";
 import Projects from "./pages/Projects";
 // @ts-ignore - JSX file
-import ProjectDetail from "./pages/ProjectDetails";
+import ProjectDetails from "./pages/ProjectDetails";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
@@ -16,8 +16,7 @@ import Experience from "./pages/Experience";
 
 
 import { useParams, useNavigate } from "react-router-dom";
-import ProjectDetails from "./pages/ProjectDetails.tsx";
-import { PROJECTS_DATA } from "./pages/Projects"; // Make sure PROJECTS_DATA is exported
+import { PROJECTS_DATA } from "./pages/Projects"; 
 
 // Wrapper to pass props dynamically based on slug
 function ProjectDetailsWrapper() {
