@@ -26,7 +26,7 @@ const PROJECTS_DATA = [
   },
   {
   id: "cross_lingual_embeddings",
-  title: "CROSS_LINGUAL_EMBEDDINGS_AFRICAN_LANGS",
+  title: "CROSS_LINGUAL_EMBEDDINGS",
   domain: "NLP / Multilingual AI",
   role: "Researcher & Developer",
   stack: "Python | FastText | CCA | VecMap | NLP",
@@ -43,7 +43,7 @@ const PROJECTS_DATA = [
 
 {
   id: "medical_short_text_semantic_expansion",
-  title: "MEDICAL_SHORT_TEXT_SEMANTIC_EXPANSION",
+  title: "MEDICAL_SHORT_TEXT",
   domain: "NLP / Healthcare AI",
   role: "Researcher & Re-Implementation Lead",
   stack: "Python | Word2Vec | CNN | LSTM | Clustering",
@@ -60,7 +60,7 @@ const PROJECTS_DATA = [
 
 {
   id: "document_ocr_pipeline",
-  title: "DOCUMENT_OCR_AND_PROCESSING_PIPELINE",
+  title: "DOCUMENT_OCR_&_PROCESSING",
   domain: "Computer Vision / Document AI",
   role: "Machine Learning Engineer",
   stack: "Python | OpenCV | Tesseract OCR | NumPy",
