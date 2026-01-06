@@ -10,6 +10,28 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
 
+
+
+
+
+
+import { useParams, useNavigate } from "react-router-dom";
+import ProjectDetails from "./pages/ProjectDetails.tsx";
+import { PROJECTS_DATA } from "./pages/Projects"; // Make sure PROJECTS_DATA is exported
+
+// Wrapper to pass props dynamically based on slug
+function ProjectDetailsWrapper() {
+  const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
+
+  const project = PROJECTS_DATA.find(p => p.id === slug);
+  if (!project) return <p>Project not found</p>;
+
+  return <ProjectDetails project={project} onBack={() => navigate("/")} />;
+}
+
+
+
 export default function App() {
   const [init, setInit] = useState(false);
 
@@ -81,7 +103,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/projects/:slug" element={<ProjectDetailsWrapper />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/experience" element={<Experience />} />

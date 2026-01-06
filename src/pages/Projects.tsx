@@ -4,6 +4,8 @@ import SystemPanel from "../components/SystemPanel";
 import ProjectDetails from "./ProjectDetails"; // Import the reusable component
 import { ChevronRight } from "lucide-react";
 
+
+
 const PROJECTS_DATA = [
   
   {
@@ -125,3 +127,7 @@ export default function Projects() {
     />
   );
 }
+
+
+
+export {PROJECTS_DATA}; // your project objects

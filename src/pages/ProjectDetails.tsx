@@ -3,10 +3,25 @@ import TerminalLayout from "../layouts/TerminalLayout";
 import SystemPanel from "../components/SystemPanel";
 import { Info, Cpu, Activity, CheckCircle2, ArrowLeft } from "lucide-react";
 
+interface Project {
+  id: string;
+  title: string;
+  domain: string;
+  role: string;
+  stack: string;
+  outcome: string;
+  problem: string;
+  execLogic: string;
+  techLogic: string;
+  impacts: string[];
+}
 
+interface ProjectDetailsProps {
+  project: Project;
+  onBack: () => void;
+}
 
-// Just start the function directly
-export default function ProjectDetails({ project, onBack }) {
+export default function ProjectDetails({ project, onBack }: ProjectDetailsProps) {
   const [isExecutive, setIsExecutive] = useState(true);
 
   return (
@@ -96,3 +111,5 @@ export default function ProjectDetails({ project, onBack }) {
     />
   );
 }
+
+export { ProjectDetails };
